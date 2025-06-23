@@ -8,13 +8,13 @@ void solve()
     string s;
     cin >> s;
     int n = stoi(s);
-    for (int i = 1; i < 100; i++)
+    for (int i = 0; i <= 100; i++)
     {
         if (i * i == n)
         {
             cout << i << ' ';
             cout << 0 << endl;
-            return ;
+            return;
         }
     }
     cout << -1 << endl;
