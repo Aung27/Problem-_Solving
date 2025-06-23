@@ -4,22 +4,20 @@ using namespace std;
 
 void solve()
 {
-    
+
     string s;
-    cin>>s;
-    int n=stoi(s);
-    for(int i=1;i<100;i++)
+    cin >> s;
+    int n = stoi(s);
+    for (int i = 1; i < 100; i++)
     {
-        if(i*1==n)
+        if (i * i == n)
         {
-            cout<<n/2<<' ';
-            cout<<n-(n/2)<<endl;
+            cout << i << ' ';
+            cout << 0 << endl;
             return ;
         }
     }
-    cout<<-1<<endl;
-
-    
+    cout << -1 << endl;
 }
 
 int main()
