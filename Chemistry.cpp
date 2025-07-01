@@ -4,8 +4,8 @@ using namespace std;
 void solve()
 {
     string s;
-    int k;
-    cin >> s >> k;
+    int n,k;
+    cin >>n>> k >> s;
 
     map<char, int> freq;
 
@@ -15,20 +15,21 @@ void solve()
     }
 
     int oddCount = 0;
-    for (auto [ch, count] : freq)
+    for (auto it = freq.begin(); it != freq.end(); ++it)
     {
-        if (count % 2 != 0)
+        if (it->second % 2 != 0)
         {
             oddCount++;
         }
     }
-    if (oddCount > k + 1)
+
+    if (oddCount> k+1)
     {
-        cout << "NO" << endl;
+        cout << "NO"<<endl;
     }
     else
     {
-        cout << "YES" << endl;
+        cout << "YES"<<endl;
     }
 }
 
